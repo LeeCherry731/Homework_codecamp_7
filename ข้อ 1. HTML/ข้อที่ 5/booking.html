@@ -1,21 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>booking</title>
-</head>
-<body>
-    <div style="text-align: center;">
-        <form action="#">
-            <label for="" style="display: block;">Flying from</label>
-            <select name="fight" id="fight">
-                <option value="">Karachi</option>
-                <option value="">Pakist</option>
-                <option value="">3</option>
-                <option value="">4</option>
-              </select>
-        </form>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        text-align: center;
+        width: 284px;
+        padding: 10px 10px 20px 10px;
+        border: 1px solid #bfbfbf;
+        background-color: white;
+        box-shadow: 10px 10px 5px #aaaaaa;
+        width: 400px;
+      }
+      label,
+      input,
+      select {
+        display: block;
+        text-align: left;
+        width: 100px;
+      }
+      select,
+      input {
+        margin-bottom: 15px;
+      }
+      .col {
+        margin-left: 20px;
+      }
+      label {
+          color: black;
+          font-weight: bold;
+      }
+      input[type=submit] {
+        box-shadow:inset 0px 1px 0px 0px #fce2c1;
+        background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+        background-color:#ffc477;
+        border-radius:6px;
+        border:1px solid #eeb44f;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding: 6px 16px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #cc9f52;
+
+        position: relative;
+        right: 131px;
+      }
+      input[type=submit]:hover {
+        background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	    background-color:#fb9e25;
+      }
+      input[type=submit]:active {
+        position:relative;
+	    top:1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form action="#">
+            <div style="display: flex;">
+                <div class="col">
+                    <label for="">Flying from</label>
+                    <select name="fight" id="fight">
+                        <option value="">Karachi</option>
+                        <option value="">Pakist</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+        
+                    <label for="">Departing</label>
+                    <input type="date" name="" id="" />
+        
+                    <div style="display: flex;">
+                        <div style="width: 70px;">
+                            <label for="">Adult</label>
+                            <input type="number" name="" id="" style="width: 50px;"/>
+                        </div>
+                        
+                        <div>
+                            <label for="">Child</label>
+                            <input type="number" name="" id="" style="width: 50px;"/>
+                        </div>
+                    </div>
+                    </div>
+        
+                        <div class="col">
+                        <label for="">To</label>
+                        <select name="" id="">
+                            <option value="">Isiamabad</option>
+                            <option value="">pal</option>
+                        </select>
+        
+                        <label for="">Returning</label>
+                        <input type="date" name="" id="" />
+        
+                        <div style="display: flex;">
+                            <div style="width: 70px;">
+                                <label for="">Infant</label>
+                                <input type="number" name="" id="" style="width: 50px;"/>
+                            </div>
+                            
+                            <div>
+                                <label for="" style="color: red;">Currency</label>
+                                <select name="" id="" style="width: 50px;">
+                                    <option value="PKR">PKR</option>
+                                </select>
+                            </div>
+        
+                        </div>
+                        </div>
+        
+                </div>
+                    <input type="submit" value="SEARCH">
+            </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
