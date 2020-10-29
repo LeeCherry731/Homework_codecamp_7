@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            text-align: left;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #3d3d3d;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>CSS syntax</th>
+            <th>CSS writing</th>
+            <th>selector</th>
+            <th>combinator</th>
+        </tr>
+        <tr>
+            <td>selector</td>
+            <td>1. Inline Style Sheet</td>
+            <td>1. Class Selectors</td>
+            <td>descendant selector (space)</td>
+        </tr>
+        <tr>
+            <td>property</td>
+            <td>2. Embed Style Sheet</td>
+            <td>2. ID Selectors</td>
+            <td>child selector (>)</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>3. External Style Sheet</td>
+            <td>3. TAG Selectors</td>
+            <td>adjacent sibling selector (+)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>general sibling selector (~)</td>
+        </tr>
+    </table>
+
+<!-------------------------- example syntax ---------------------->
+
+    <h1>For example css syntax</h1>
+    <textarea name="" id="" cols="50" rows="10">p {
+    color: red;
+    text-align: center;
+}</textarea>
+
+<!---------------------------- example writing ------------------------->
+    
+
+<h1>For example css writing</h1>
+    <textarea name="" id="" cols="50" rows="20">
+1. inline style Sheet
+<p style="color: red;">test</p>
+
+
+2. Embed Style Sheet
+<head>
+    <title>review</title>
+    <style>
+        table {
+            text-align: left;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+3. External Style Sheet
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+    </textarea>
+
+    <!------------------------------- example selector -->
+
+<h1>selector example Case</h1>
+<textarea name="" id="" cols="50" rows="15">
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+#cat {
+    background-color: pink;
+}
+
+table {
+    border: 1px solid #3d3d3d;
+}
+
+</textarea>
+
+
+<!------------------------------- example combinator --------------------------------->
+
+<h1>combinator example</h1>
+<textarea name="" id="" cols="50" rows="20">
+1. descendant selector (space)
+    div p {
+        background-color: yellow;
+    } 
+
+2. child selector (>)
+    div > p {
+        background-color: yellow;
+    }
+
+3. adjacent sibling selector (+)
+    div + p {
+        background-color: yellow;
+    }
+
+4. general sibling selector (~)
+    div ~ p {
+        background-color: yellow;
+      }
+</textarea>
+</body>
+</html>
