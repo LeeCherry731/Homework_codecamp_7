@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <style>
+        table {
+            text-align: left;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #3d3d3d;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>property</th>
+            <th>value</th>
+            <th>unit</th>
+            <th>differentiation</th>
+        </tr>
+        <tr>
+            <td>คือชื่อคุณสมบัติของ css เช่น width, height, position ฯลฯ</td>
+            <td>คือค่าของ property นั้นๆ ครับ เช่น 500px สำหรับความกว้าง</td>
+            <td style="font-size: 10px;">หน่วยแบบ Relative Length (กำหนดแบบอัตราส่วน)
+                px (pixels, สัมพันธ์กับค่าความละเอียดของหน้าจอ) เช่น 1px, 4px
+                em (emphasize, ความสูงของตัวอักษร) เป็นขนาดจำนวนเท่าของขนาด font ที่กำหนดให้ body
+                ถ้า font ที่ body กำหนดเป็น 10px
+                h1{fon-size:1.5em} h1 จะมีขนาดเป็น 1.5 เท่า ของ 10px = 15px
+                h2{fon-size:1.4em} h2 จะมีขนาดเป็น 1.4 เท่า ของ 10px = 14px
+                และถ้าเรากำหนดเป็น 1em ก็จะมีขนาด้เท่ากับ 10px เหมือนเดิม
+                ex (x-height, ความสูงของตัวอักษร "x") เช่น 1.5ex, 2ex
+                % (percent, สัมพันธ์กับขนาดหน้าจอ หรือ container ที่บรรจุวัตถุนั้นๆ อยู่) เช่น 50%, 130%
+                
+                หน่วยแบบ Absolute Length (กำหนดตายตัว)
+                in (inches; 1in=2.54cm =72pt =6pc) เช่น 2in, 1.5in
+                cm (centimeters; 1cm=10mm) เช่น 2cm, 1.11cm
+                mm (millimeters) เช่น 50mm, 0.8mm
+                pt (points; 1pt=1/72in, 10pt มีขนาดพอๆกับ 12px) เป็นหน่วยที่ใช้ในงานสิ่งพิมพเช่น 12pt, 20pt
+                pc (picas; 1pc=12pt) เช่น 1pc, 2pc</td>
+            <td>property เป็นส่วนที่บอกคุญสมบัติ แต่ value เป็นค่าที่อยู่ใน property การเขียนก็คนละตำแหน่ง ซึ่งไม่เหมือนกัน</td>
+        </tr>
+    </table>
+</body>
+</html>
