@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        span {
+            color: red;
+        }
+
+        .setup {
+            width: 100%;
+            height: 30px;
+            background-color: gainsboro;
+            margin: 20px 10px;
+            text-align: left;
+            padding: 5px;
+            color: grey;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <form action="">
+        <div class="form">
+            <div class="inputfield">
+               <label>Name <span>*</span>:</label>
+               <input type="text" class="input">
+            </div>  
+             <div class="inputfield">
+               <label>Tab Text <span>*</span>:</label>
+               <input type="text" class="input">
+            </div>  
+            <div class="inputfield">
+               <label>URL <span>*</span>:</label>
+               <input type="url" class="input">
+            </div>  
+
+            <div class="setup">
+                FORM SETUP
+            </div>
+
+           <div class="inputfield">
+               <label>Form:</label>
+               <div class="custom_select">
+                <select>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div> 
+           <div class="inputfield">
+               <label>Logo:</label>
+               <input type="file" class="input">
+            </div> 
+             <div class="inputfield">
+               <label>Template Text:</label>
+               <div class="custom_select">
+                 <select>
+                   <option value="" label="English"></option>
+                 </select>
+               </div>
+            </div> 
+             <div class="inputfield">
+               <label>Review Form:</label>
+               <div class="custom_select">
+                <select>
+                  <option value="" label="Default"></option>
+                </select>
+              </div>
+            </div> 
+           <div class="inputfield">
+               <label>Review Score:</label>
+               <div class="custom_select">
+                <select>
+                  <option value="" label="Rating"></option>
+                </select>
+              </div>
+            </div> 
+           <div class="inputfield">
+               <label>Scoring Type:</label>
+               <div class="custom_select">
+                <select>
+                  <option value="Average" label="Average"></option>
+                </select>
+              </div>
+            </div> 
+           <div class="inputfield">
+               <label>Max Score:</label>
+               <input type="number" class="input" value="4.00">
+            </div> 
+
+           <div class="inputfield">
+             <input type="submit" value="SUBMIT" class="btn">
+           </div>
+         </div>
+        </form>
+    </div>	
+</body>
+</html>
