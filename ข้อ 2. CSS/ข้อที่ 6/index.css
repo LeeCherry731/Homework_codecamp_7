@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: bisque;
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 501px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 701px) {
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    img {
+        width: 30vw;
+        margin: 10px;
+    }
+}
