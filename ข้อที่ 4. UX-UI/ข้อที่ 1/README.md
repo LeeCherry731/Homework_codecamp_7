@@ -5,3 +5,7 @@
 * Credible: น่าเชื่อถือ
 * Desirable: น่าใช้
 * Accessible: เข้าถึงได้ง่าย
+
+---
+
+> <http://web.archive.org/web/20100813142028/http://havenworks.com/>
