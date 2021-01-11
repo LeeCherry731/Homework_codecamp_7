@@ -1,0 +1,12 @@
+.swiper-container {
+    width: 90vw;
+}
+
+.swiper-wrapper {
+    padding-inline-start: 0;
+}
+
+.swiper-pagination {
+    bottom: 0;
+    padding-bottom: 20px;
+}
