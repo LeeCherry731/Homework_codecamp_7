@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +11,31 @@
 </head>
 
 <body>
-    <script src="15.js"></script>
+    <script>
+        let a = prompt("enter a value")
+        let b = prompt("enter b value")
+
+        function gcd_two_numbers(a, b) {
+            // x = Math.abs(x);
+            // y = Math.abs(y);
+            while (b) {
+                var t = b;
+                b = a % b;
+                a = t;
+            }
+            return a;
+        }
+        let result = gcd_two_numbers(a, b);
+        if (result === 1) {
+
+            alert(a + "/" + b)
+        } else {
+            a = a / result;
+            b = b / result;
+
+            alert(a + "/" + b)
+        }
+    </script>
 </body>
 
 </html>
