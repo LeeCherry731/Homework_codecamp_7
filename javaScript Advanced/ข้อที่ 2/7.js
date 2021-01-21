@@ -1,0 +1,3 @@
+const numberOfSquare = (height, width) => {
+    
+}
